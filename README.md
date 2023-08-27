@@ -23,4 +23,4 @@ To get started.
 Go to [Mobile (React Native with Expo) DALL-E Image Gallery with Variations and Edit Video](https://youtu.be/r6PaBO7P_8U
 ) page
 
-Go to [Mobile (React Native with Expo) DALL-E Image Gallery with Variations and Edit Description](https://ashot72.github.io/Mobile-DALL-E-Image-Gallery-Variations-Edit/docs.html) page
+Go to [Mobile (React Native with Expo) DALL-E Image Gallery with Variations and Edit Description](https://ashot72.github.io/Mobile-DALL-E-Image-Gallery-Variations-Edit/doc.html) page
