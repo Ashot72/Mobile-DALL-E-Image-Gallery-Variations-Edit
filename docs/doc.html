@@ -1,0 +1,335 @@
+<html>
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=Generator content="Microsoft Word 15 (filtered)">
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;}
+@font-face
+	{font-family:Calibri;
+	panose-1:2 15 5 2 2 2 4 3 2 4;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{margin-top:0in;
+	margin-right:0in;
+	margin-bottom:8.0pt;
+	margin-left:0in;
+	line-height:107%;
+	font-size:11.0pt;
+	font-family:"Calibri",sans-serif;}
+a:link, span.MsoHyperlink
+	{color:#0563C1;
+	text-decoration:underline;}
+.MsoChpDefault
+	{font-family:"Calibri",sans-serif;}
+.MsoPapDefault
+	{margin-bottom:8.0pt;
+	line-height:107%;}
+@page WordSection1
+	{size:8.5in 11.0in;
+	margin:1.0in 1.0in 1.0in 1.0in;}
+div.WordSection1
+	{page:WordSection1;}
+-->
+</style>
+
+</head>
+
+<body lang=EN-US link="#0563C1" vlink="#954F72" style='word-wrap:break-word'>
+
+<div class=WordSection1>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:20.0pt;line-height:107%'>Mobile (React Native with Expo)
+DALL-E Image Gallery with Variations and Edit</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>Vide Link: <a
+href="https://youtu.be/r6PaBO7P_8U" target="_blank">https://youtu.be/r6PaBO7P_8U</a></span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>GitHub
+Repository:</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>This is an
+extension of my previous DALL-E Image Gallery app, which can be found at <a
+href="https://github.com/Ashot72/Mobile-DALL-E-Image-Gallery%0d">https://github.com/Ashot72/Mobile-DALL-E-Image-Gallery</a></span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>With this
+app, you can generate various image variations and edit images with your finger
+to generate multiple images sequentially.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>In the
+previous app, you can observe how we registered the app, accessed different
+tenants with multiple users, and built it.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=805 height=632 id="Picture 1"
+src="doc_files/image001.jpg"></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>Figure 1</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>In this app,
+we will not only generate images but also create variations and edit them.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=266 height=582 id="Picture 2"
+src="doc_files/image002.jpg"></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>Figure 2</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>From the
+main image we can create variations.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=881 height=513 id="Picture 3"
+src="doc_files/image003.jpg"></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>Figure 3</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>If you look
+at the API, you will see that we need to pass the original image and the number
+of images we want to generate, which, in our case, is 6. </span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>Additionally,
+you should note the image size, which is 512x512.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=961 height=557 id="Picture 4"
+src="doc_files/image004.jpg"></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>Figure 4</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>In the app,
+we create formData and pass an image as base64, specify the content type as <i>multipart/form-data</i>,
+and then call the endpoint.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=1033 height=464 id="Picture 6"
+src="doc_files/image005.jpg"></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>Figure 5</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>In Postman,
+I select the original image as a File (by picking it via the picker), specify
+the desired number of generated images, and set the file size.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=1124 height=447 id="Picture 7"
+src="doc_files/image006.jpg"></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>Figure 6</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>You can
+observe that six variations have been generated.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=1124 height=539 id="Picture 8"
+src="doc_files/image007.png"></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>Figure 7</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>The original
+image is on the left, and one of the variations is on the right.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=309 height=680 id="Picture 9"
+src="doc_files/image008.jpg"></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>Figure 8</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>We use a web
+view to edit an image with a finger, employing HTML5 canvas <i>clearRect</i> to
+make pixels transparent. This is the mask image.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=938 height=535 id="Picture 10"
+src="doc_files/image009.jpg"></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>Figure 9</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>In the Image
+Edit API, you can observe that we need to provide both the original and mask
+images, and it will generate a new image </span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>based on the
+given prompt. We generate a single image within our app with a size of 512x512.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=1019 height=497 id="Picture 11"
+src="doc_files/image010.jpg"></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>Figure 10</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>On the left
+is the original image, and on the right is the mask image.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=1027 height=469 id="Picture 12"
+src="doc_files/image011.jpg"></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>Figure 11</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>We call the
+Image Edit endpoint by passing an image, a mask, and the prompt <i>an eagle in
+the sky</i>.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=900 height=583 id="Picture 13"
+src="doc_files/image012.jpg"></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>Figure 12</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>Here is the
+output image.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=938 height=551 id="Picture 14"
+src="doc_files/image013.jpg"></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>Figure 13</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>The Edit
+Image call is similar to the image variations call. We pass both images as
+base64 and the prompt.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=950 height=741 id="Picture 15"
+src="doc_files/image014.jpg"></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>Figure 14 </span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>For Image
+Edit, we use a web view to establish communication between React Native and
+WebViews in both directions. </span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>You can read
+about it, so I will not go into details.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=793 height=745 id="Picture 16"
+src="doc_files/image015.png"></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>Figure 15</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>I would like
+to discuss one thing related to the canvas. With canvas draw image we can pass
+an image URL to draw it.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=1047 height=133 id="Picture 18"
+src="doc_files/image016.jpg"></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>Figure 16</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>For example,
+we can pass this URL to ctx.drawImage(image), and we will see the image on the
+canvas. Afterward, we can edit the canvas.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=863 height=318 id="Picture 19"
+src="doc_files/image017.png"></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>Figure 17</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>After
+editing the canvas, we need to obtain the base64 image to be passed to the
+Image Edit API.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=932 height=579 id="Picture 20"
+src="doc_files/image018.jpg"></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>Figure 18</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>When
+attempting to call canvas.toDataURL(), an exception <i>Tainted canvases may not
+be exported</i> occurs. Even if you set the</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'> <i>crossOrigin
+=</i> Anonymous attribute on the image, you will still encounter the error.
+This is because <i>Access-Control-Allow-Origin</i> </span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>headers are
+not permitted when calling the DALL-E endpoint.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=1029 height=537 id="Picture 21"
+src="doc_files/image019.jpg"></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>Figure 19</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>For this
+reason, we avoid passing the URI (Figure 16) directly. Instead, we fetch it and
+then provide it as base64 to our canvas. </span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>This way, we
+pass a base64 image to the canvas, edit the image, and subsequently obtain the
+base64 image to pass to the Edit Image endpoint.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=1090 height=552 id="Picture 22"
+src="doc_files/image020.jpg"></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>Figure 20</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>There is <i>react-native-canvas</i>
+that we could use instead of the HTML5 canvas, but it does not support
+listeners. Therefore, we must use the </span></p>
+
+<p class=MsoNormal><i><span style='font-size:14.0pt;line-height:107%'>touchmove</span></i><span
+style='font-size:14.0pt;line-height:107%'> listener to edit the image. For this
+reason, we opt for the HTML5 canvas. </span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><img border=0 width=1071 height=487 id="Picture 23"
+src="doc_files/image021.jpg"></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>Figure 21</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>Note that we
+always retrieve <i>touches[0]</i> since <i>touches</i> represents a list of
+touch points. When you place two fingers on the screen simultaneously, </span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>you will
+obtain two values. However, in our app, considering the context, we
+consistently use the first value.</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal><span style='font-size:14.0pt;line-height:107%'>&nbsp;</span></p>
+
+<p class=MsoNormal>&nbsp;</p>
+
+</div>
+
+</body>
+
+</html>
